@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/001/192/607/non_2x/fork-png.png">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Delicious Recipes</h1>
+            </div>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#submit-recipe">Submit Recipe</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Discover Amazing Recipes</h1>
+            <p>Find your next favorite dish from our collection of delicious recipes</p>
+            <a href="#recipes" class="home-button">Explore Recipes</a>
+            
+        </div>
+    </section>
+
+    <section class="featured-recipes" id="recipes">
+        <h2>Featured Recipes</h2>
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <img src="https://i.pinimg.com/736x/9b/ff/a3/9bffa3af15be8bfa5bf54c037f21591c.jpg" alt="Pasta Dish">
+                <div class="recipe-content">
+                    <h3>Creamy Garlic Pasta</h3>
+                    <div class="recipe-info">
+                        <span><i class="mins"></i> 30 mins</span>
+                        <span><i class="servings"></i> 4 servings</span>
+                    </div>
+                    <p>A delicious Italian pasta dish with creamy garlic sauce.</p>
+                    <a href="#" class="recipe-button">View Recipe</a>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <img src="https://i.pinimg.com/736x/b5/2e/20/b52e2005c3070d803a4a56d2071e30cb.jpg" alt="Chicken Curry">
+                <div class="recipe-content">
+                    <h3>Spicy Chicken Curry</h3>
+                    <div class="recipe-info">
+                        <span><i class="mins"></i> 45 mins</span>
+                        <span><i class="servings"></i> 6 servings</span>
+                    </div>
+                    <p>Aromatic Indian curry with tender chicken pieces.</p>
+                    <a href="#" class="recipe-button">View Recipe</a>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <img src="https://i.pinimg.com/236x/86/1c/35/861c35b6ff020949e95636c9354b9907.jpg" alt="Chocolate Cake">
+                <div class="recipe-content">
+                    <h3>Chocolate Cake</h3>
+                    <div class="recipe-info">
+                        <span><i class="hour"></i> 1 hour</span>
+                        <span><i class="servings"></i> 8 servings</span>
+                    </div>
+                    <p>Rich and moist chocolate cake perfect for any occasion.</p>
+                    <a href="#" class="recipe-button">View Recipe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories" id="categories">
+        <h2>Recipe Categories</h2>
+        <div class="category-grid">
+            
+
+            <div class="category-card">
+                <i class="hamburger"></i>
+                <h3>Main Dishes</h3>
+            </div>
+            <div class="category-card">
+                <i class="deserts"></i>
+                <h3>Desserts</h3>
+            </div>
+            <div class="category-card">
+                <i class="vegetarian"></i>
+                <h3>Vegetarian</h3>
+            </div>
+            <div class="category-card">
+                <i class="breakfast"></i>
+                <h3>Breakfast</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="submit-recipe" id="submit-recipe">
+        <div class="form-container">
+            <h2 >Submit Your Recipe</h2>
+
+            <form acction="http://127.0.0.1:5000/submit" class="recipe-form" method="POST">
+            <fieldset class="bord-form">
+                <div class="form-group">
+                    <label for="recipe-name">Recipe Name</label>
+                    <input type="text" id="recipe-name" name="recipe" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="preparation-time">Preparation Time (minutes)</label>
+                        <input type="number" id="preparation-time" name="number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cooking-time">Cooking Time (minutes)</label>
+                        <input type="number" id="cooking-time" name="number2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="serving">Servings</label>
+                        <input type="number" id="serving" name="number3" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="difficulty">Difficulty Level</label>
+                    <select id="difficulty" name="difficulty" required>
+                        <option value="">Select Difficulty</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ingredients">Ingredients (one per line)</label>
+                    <textarea id="ingredients" name="ingredients" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="instructions">Cooking Instructions</label>
+                    <textarea id="instructions" name="instructions" rows="8" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Notes (optional)</label>
+                    <textarea id="notes" name="notes" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="author">Your Name</label>
+                    <input type="text" id="author" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <button type="submit" class="submit-button">Submit Recipe</button>
+            </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>We are passionate about sharing delicious recipes from around the world. Our goal is to make cooking fun and accessible for everyone, from beginners to experienced chefs.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@deliciousrecipes.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Delicious Recipes. All rights reserved.</p>
+        </div>
+    </footer>
+   
+</body>
+</html>
