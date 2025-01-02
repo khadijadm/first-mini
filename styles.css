@@ -88,7 +88,7 @@ nav {
 
 
 
-.hero {
+.facade {
     height: 100vh;
     background-color: #d47b5261;
     display: flex;
@@ -100,18 +100,18 @@ nav {
     border-bottom: 1px solid #eee;
 }
 
-.hero-content {
+.facade-content {
     max-width: 600px;
 }
 
-.hero-content h1 {
+.facade-content h1 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     font-weight: 700;
     color: #2c3e50;
 }
 
-.hero-content p {
+.facade-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #666;
@@ -136,11 +136,11 @@ nav {
 
 
 @media (max-width: 768px) {
-    .hero-content h1 {
+    .facade-content h1 {
         font-size: 2.5rem;
     }
 
-    .hero-content p {
+    .facade-content p {
         font-size: 1rem;
     }
 }
@@ -296,9 +296,6 @@ nav {
 }
 
 
-
-
-
 .form-container {
     max-width: 800px;
     margin: 0 auto;
@@ -313,8 +310,6 @@ nav {
     margin-bottom: 2rem;
     color: #333;
     
-    
-    
 }
 
 .recipe-form {
@@ -323,7 +318,7 @@ nav {
     gap: 1.5rem;
 }
 
-.form-group {
+.form-content {
     font-weight: bold;
     margin: 5px;
     padding-bottom: 10px;
@@ -339,14 +334,14 @@ nav {
     gap: 1rem;
 }
 
-.form-group label {
+.form-content label {
     font-weight: 500 bold;
     color: #333;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+.form-content input,
+.form-content select,
+.form-content textarea {
     padding: 0.8rem;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -354,16 +349,16 @@ nav {
     font-family: inherit;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.form-content input:focus,
+.form-content select:focus,
+.form-content textarea:focus {
     
     outline: none;
     border-color: #e74c3c;
     box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.1);
 }
 
-.form-group textarea {
+.form-content textarea {
     
     resize: vertical;
     min-height: 100px;
@@ -422,28 +417,13 @@ footer {
     margin-bottom: 1rem;
 }
 
-.social-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.social-links a {
-    color: #fff;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #e74c3c;
-}
-
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.bord-form{
+.formulaire{
     border: 2px solid black;
     border-radius: 10px;
     margin-top: 19px;
